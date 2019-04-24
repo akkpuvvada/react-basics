@@ -1,12 +1,12 @@
 # react-basics
 React application  that explaining all basic concepts for a web application
 
-##Concepts to be covered
-Markup : * Type of imports or exports
-         * Use of setState. Heart of react component
-         * Concept of Router
-         * Functional rendering
-         * Lifecycle of react component
+## Concepts to be covered
+ * Type of imports or exports
+ * Use of setState. Heart of react component
+ * Concept of Router
+ * Functional rendering
+ * Lifecycle of react component
 
 #### General questions
     Question: What is package.json, package-lock.json files?
