@@ -19,10 +19,14 @@ React.createElement(
 );
 */
 import React from 'react';
+import { Route,Link, BrowserRouter as Router } from 'react-router-dom'
 
-import {SetState} from './Components/SetState'
-import Display from './Components/SetState'
+import HomePage from "./Components/HomePage";
+import ImportTypes from "./Components/ImportTypes";
+import { SetState } from './Components/SetState';
+
 import './App.css';
+
 
 /* Which type of component are we creating here?
   Answer: we are creating a stateless or a classless component 
@@ -32,10 +36,25 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-    <SetState/>
-    <Display/>
-    </div>
+      <Router>
+            <ul>
+                <li>
+                    <Link to="/Home">Home</Link>
+                </li>
+                <li>
+                    <Link to="/imports">Type Of imports</Link>
+                </li>
+                <li>
+                    <Link to="/setstate">SetState Explanation</Link>
+                </li>
+            </ul>
+        <div>
+          <Route path="/"/>
+          <Route path="/Home" component={HomePage} />
+          <Route path="/imports" component={ImportTypes} />
+          <Route path="/setstate" component={SetState} />
+        </div>
+      </Router>
   );
 }
 
