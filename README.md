@@ -1,6 +1,12 @@
 # react-basics
 React application  that explaining all basic concepts for a web application
 
+## Prerequisites
+ * HTML
+ * CSS
+ * Bootstarp
+ * JavaScript
+
 ## Concepts to be covered
  * Type of imports or exports
  * Use of setState. Heart of react component
